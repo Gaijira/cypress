@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-23T12:03:07.847Z",
+    "end": "2021-07-23T12:03:12.564Z",
+    "duration": 4717,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a8263543-cf86-4808-bad4-27b4298e8462",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/contact-us.js",
+      "file": "cypress/integration/webdriver-uni/contact-us.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c602b351-40fa-4705-8dd6-abde949265a8",
+          "title": "Test Contact Us form via WebdriverUni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to submit a successsfull submission via contact us form",
+              "fullTitle": "Test Contact Us form via WebdriverUni Should be able to submit a successsfull submission via contact us form",
+              "timedOut": null,
+              "duration": 3284,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().should('have.property', 'charset').and('eq', 'UTF-8');\ncy.title().should('include', 'WebDriver | Contact Us');\ncy.url().should('include', 'Contact-Us');\ncontact_UsPage.contactFormSubmission(Cypress.env('first_name'), user.last_name, user.email, 'test', 'h1', 'Thank You for your Message!');",
+              "err": {},
+              "uuid": "432e8e48-7f59-4b81-be10-050150d44b04",
+              "parentUUID": "c602b351-40fa-4705-8dd6-abde949265a8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not be able to submit a successsfull submission via contact us form as all fields are required",
+              "fullTitle": "Test Contact Us form via WebdriverUni Should not be able to submit a successsfull submission via contact us form as all fields are required",
+              "timedOut": null,
+              "duration": 1372,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "contact_UsPage.contactFormSubmission(user.first_name, user.last_name, ' ', 'test', 'body', 'Error: Invalid email address');",
+              "err": {},
+              "uuid": "6fff174b-bfe1-492d-9509-5524f212de93",
+              "parentUUID": "c602b351-40fa-4705-8dd6-abde949265a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "432e8e48-7f59-4b81-be10-050150d44b04",
+            "6fff174b-bfe1-492d-9509-5524f212de93"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4656,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

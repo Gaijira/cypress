@@ -1,0 +1,21 @@
+{
+  "baseUrl": "http://www.webdriveruniversity.com/",
+  "chromeWebSecurity": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "pageLoadTimeout": 3000,
+  "projectId": "r2mqsk",
+  "experimentalStudio":true,
+  "retries": {
+    "runMode": 1,
+    "openMode": 1
+  },
+  "env": {
+    "webdriveruni_homepage": "http://www.webdriveruniversity.com/",
+    "first_name": "Sarah"
+  },
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}

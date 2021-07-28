@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-23T13:58:18.517Z",
+    "end": "2021-07-23T13:58:27.116Z",
+    "duration": 8599,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3884517d-e7e4-49dd-a080-7b6df273b54f",
+      "title": "",
+      "fullFile": "cypress/integration/automation-teststore/iterate-over-elememts.js",
+      "file": "cypress/integration/automation-teststore/iterate-over-elememts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fd7706c3-ddee-48a3-9471-328ee6dd527e",
+          "title": "Verifying variables, cypress commands and jquery commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Log info of all haircare products",
+              "fullTitle": "Verifying variables, cypress commands and jquery commands Log info of all haircare products",
+              "timedOut": null,
+              "duration": 2492,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.fixed_wrapper  .prdocutname').each(function ($el, index, $list) {\n  cy.log(\"Index: \" + index + 'is ' + $el.text());\n});",
+              "err": {},
+              "uuid": "0507d1fd-59c3-4247-9ad9-c1d2e613fe6e",
+              "parentUUID": "fd7706c3-ddee-48a3-9471-328ee6dd527e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add specific product to cart",
+              "fullTitle": "Verifying variables, cypress commands and jquery commands Add specific product to cart",
+              "timedOut": null,
+              "duration": 1683,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Curls to straight Shampoo');",
+              "err": {},
+              "uuid": "006026a2-738d-4314-ae6a-51b353e4f24e",
+              "parentUUID": "fd7706c3-ddee-48a3-9471-328ee6dd527e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add another product to cart",
+              "fullTitle": "Verifying variables, cypress commands and jquery commands Add another product to cart",
+              "timedOut": null,
+              "duration": 1474,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Seaweed Conditioner');",
+              "err": {},
+              "uuid": "f952ae7b-9943-4eab-9094-df31fb37b556",
+              "parentUUID": "fd7706c3-ddee-48a3-9471-328ee6dd527e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add one more product to cart",
+              "fullTitle": "Verifying variables, cypress commands and jquery commands Add one more product to cart",
+              "timedOut": null,
+              "duration": 1756,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selectProduct('Eau Parfumee au The Vert Shampoo');",
+              "err": {},
+              "uuid": "aaedcb6b-3e12-48be-8543-68859a11b70e",
+              "parentUUID": "fd7706c3-ddee-48a3-9471-328ee6dd527e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0507d1fd-59c3-4247-9ad9-c1d2e613fe6e",
+            "006026a2-738d-4314-ae6a-51b353e4f24e",
+            "f952ae7b-9943-4eab-9094-df31fb37b556",
+            "aaedcb6b-3e12-48be-8543-68859a11b70e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7405,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

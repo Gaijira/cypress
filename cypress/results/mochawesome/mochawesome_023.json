@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-23T11:37:46.532Z",
+    "end": "2021-07-23T11:37:49.461Z",
+    "duration": 2929,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9477dc7c-fd66-4c45-b876-1e466fd9b461",
+      "title": "",
+      "fullFile": "cypress/integration/webdriver-uni/autocomlite-lists.js",
+      "file": "cypress/integration/webdriver-uni/autocomlite-lists.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4c13d7a6-f357-453e-acab-ebfbfe67f4c1",
+          "title": "Verify Autocomlete lists",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select product in autocomplete list",
+              "fullTitle": "Verify Autocomlete lists Select product in autocomplete list",
+              "timedOut": null,
+              "duration": 2887,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/');\ncy.get('#autocomplete-textfield').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.get('#myInput').type('a');\ncy.get('#myInputautocomplete-list > *').each(function (el, index, list) {\n  var prod = el.text();\n  var productToSelect = 'Avacado';\n  if (prod === productToSelect) {\n    el.click();\n    cy.get('#submit-button').click();\n    cy.url().should('include', productToSelect);\n  }\n}).then(function () {\n  cy.get('#myInput').type('g');\n  cy.get('#myInputautocomplete-list > *').each(function (el, index, list) {\n    var prod = el.text();\n    var productToSelect = 'Garlic';\n    if (prod === productToSelect) {\n      el.click();\n      cy.get('#submit-button').click();\n      cy.url().should('include', productToSelect);\n    }\n  });\n});",
+              "err": {},
+              "uuid": "a4da40a1-d356-4041-adfd-552cc108c0dd",
+              "parentUUID": "4c13d7a6-f357-453e-acab-ebfbfe67f4c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a4da40a1-d356-4041-adfd-552cc108c0dd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2887,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
